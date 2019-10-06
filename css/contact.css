@@ -224,7 +224,7 @@ ul#on-top {
 #contact-header {
     height: 250px;
     width: 100%;
-    background:url("../images/gutter-job-compressor.jpg");
+    background:url("../images/residential.jpg");
     background-position: center center;
     color: #fff;
     display: flex;
@@ -324,6 +324,10 @@ ul#on-top {
 <---           BLOCKS           -->
 <--- -------------------------- -*/
 
+.title {
+    width: 390px;
+}
+
 .title h3 {
     font-size: 29px;
     text-align: left;
@@ -359,14 +363,14 @@ ul#on-top {
     font-weight: 700;
     font-size: 14px;
     color: #fff;
-    margin: 0;
+    margin: 0 0 0 10px;
 }
 
 .block p:last-child {
     padding: 7px;
     font-size: 14px;
     color: #fff;
-    margin: 0;
+    margin: 0 10px 0 0;
 }
 
 .hours-flex {
@@ -405,7 +409,7 @@ ul#on-top {
 <--- -------------------------- -*/
 
 #form {
-    background: url("../images/IMG-2252-compressor.jpg");
+    background: url("../images/paint-brushes.jpg");
     background-size: cover;
     position: relative;
 }

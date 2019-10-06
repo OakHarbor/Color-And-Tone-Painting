@@ -239,7 +239,7 @@ ul#on-top {
     position: absolute;
     height: 100%;
     width: 100%;
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 #contact-header h1 {
@@ -252,21 +252,52 @@ ul#on-top {
 }
 
 /*-- -------------------------- -->
-<---          GALLERY           -->
+<---          SERVICES          -->
 <--- -------------------------- -*/
 
-.gallery-content {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 100%;
-	justify-content: center;
-	padding: 80px 0;
+.services-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px auto !important;
 }
 
-.gallery-content img {
-	width: 300px;
-	margin: 6px;
+.card {
+    box-sizing: border-box;
+    max-width: 350px;
+    margin-bottom: 50px;
+    border-radius: 10px !important;
+    -webkit-box-shadow: 1px -1px 33px -10px rgba(0,0,0,0.36);
+    -moz-box-shadow: 1px -1px 33px -10px rgba(0,0,0,0.36);
+    box-shadow: 1px -1px 33px -10px rgba(0,0,0,0.36);
+}
+
+.card img {
+    max-width: 350px;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+    padding: 30px 20px;
+}
+
+.card-content h3 {
+    text-align: left;
+    font-weight: bold;
+}
+
+.services-line {
+    height: 1px;
+    width: 80%;
+    background: #DB170D;
+    margin: 10px auto 10px 0;
+}
+
+.card-content p {
+    text-align: left;
 }
 
 /*-- -------------------------- -->
@@ -345,6 +376,14 @@ ul#on-top {
 .branding p {
     font-size: 13px;
     margin-bottom: 2px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+
+    .card {
+        margin: 20px;
+    }
+
 }
 
 @media screen and (min-width: 1025px) {
@@ -527,7 +566,21 @@ ul#on-top {
 		text-align: left;
 		float: left;
 		margin: 10px 10px 10px 0;
-	}
+    }
+    
+    /*-- -------------------------- -->
+    <---          SERVICES          -->
+    <--- -------------------------- -*/
+
+    .card {
+        margin: 20px;
+    }
+
+    .services-flex {
+        max-width: 1300px !important;
+        margin-top: 100px !important;
+        justify-content: space-evenly;
+    }
 
 	/*-- -------------------------- -->
     <---           FOOTER           -->
