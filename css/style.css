@@ -1,0 +1,1611 @@
+/* Global styles */
+
+:root {
+    --main-red: #ff0000;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	font-family: 'Lato', sans-serif;
+}
+
+.container-2 {
+	padding: 0 2em;
+	margin: 0;
+}
+
+.container {
+	padding: 0 2em;
+	margin: 0;
+	max-width: 330px;
+}
+
+.mobile-wrapper {
+	background: #fff;
+    border-bottom: 5px solid red;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
+
+/* hidden desktop elements */
+
+.topper-flex,
+#brand,
+.navbar-menu,
+.call-strip-button {
+	display: none;
+}
+
+/* Buttons */
+.button-solid {
+	background: red;
+	border-radius: 25px;
+	border: none;
+	color: #fff;
+	width: auto;
+	height: 50px;
+	margin: 10px 0;
+	padding: 0 30px;
+	font-size: 13px;
+	width: auto;
+    transition: .3s ease;
+}
+
+.button-solid:hover {
+    color: var(--main-red);
+    background: #fff;
+}
+
+.button-transparent {
+    display: inline-block;
+    background: transparent;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff;
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 6px 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+    animation-delay: 0.6s;
+    border-radius: 25px;
+    white-space: nowrap;
+    float: left;
+    height: 50px;
+    transition: .3s ease;
+}
+
+.button-transparent:hover {
+    color: #fff;
+    background: var(--main-red);
+}
+
+/*-- -------------------------- -->
+<---         NAVIGATION         -->
+<--- -------------------------- -*/
+
+.navbar {
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+/* logo and hamburger container */
+.mobile-nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	height: 100px;
+	background: #fff;
+	position: relative;
+}
+
+/* Hamburger Menu */
+.open-slide {
+	display: inline-block;
+	width: auto;
+	padding: 0;
+	position: absolute;
+	right: 15px;
+	top: 36px;
+}
+
+#wrapper {
+	background: transparent;
+	display:inline-block;
+	margin:0px;
+	position: absolute;
+	cursor:pointer;
+	right: 0;
+}
+
+.main-item {
+	width:30px;
+	height:30px;
+	position:relative;
+}
+
+.line {
+	position: absolute;
+	height: 2px;
+	width:100%;
+	background: #000;
+	border-radius:1.5px;
+	transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
+}
+
+.line01 {
+	top:19%;
+}
+
+.line02 {
+	top:49%;
+}
+
+.line03 {
+	top:79%;
+}
+
+.menu.close .line01 {
+	transform:rotate(45deg);
+	top:49%;
+}
+
+.menu.close .line02, .menu.close .line03 {
+	transform:rotate(-45deg);
+	top:49%;
+}
+
+/* Hidden Menu */
+#side-menu {
+	background:  #231F20;
+    position: relative;
+    z-index: 5;
+}
+
+.side-nav {
+	visibility: hidden;
+	height: 0;
+	transition: 0.3s 
+}
+
+.side-active {
+	color: var(--main-red);
+    background: #fff;
+    padding:  7px 40px;
+    border-radius: 20px;
+}
+
+ul {
+	text-align: center;
+	padding: 30px 0;
+	margin: 0;
+}
+
+ul a {
+	text-decoration: none;
+	color: #fff;
+	line-height: 2em;
+	font-weight: 700;
+	transition: 0.3s ease;
+}
+
+ul li {
+	list-style: none;
+}
+
+ul#on-top {
+    margin-bottom: 0;
+}
+
+.menu-center {
+	position: absolute;
+	top: 9px;
+}
+
+.menu-bottom {
+	position: absolute;
+	bottom: 0;
+}
+
+/*-- -------------------------- -->
+<---          LANDING           -->
+<--- -------------------------- -*/
+
+#hero {
+    height: auto;
+    width: 100%;
+    background:url("../images/cabinet-stain.jpg");
+    /*background-attachment: fixed;*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+
+#dark {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.6;
+    z-index: 2;
+}
+
+.heroText {
+	padding: 2.5em 0;
+    position: relative;
+    z-index: 3;
+    height: auto;
+}
+
+.heroText h1 {
+	font-size: 30px;
+	color: #fff;
+	text-align: left;
+	font-weight: 900;
+	overflow-y: hidden;
+	margin: 0;
+}
+
+.heroText h2 {
+	color: #fff;
+	font-size: 17px;
+	text-align: left;
+	line-height: 1.6em;
+	padding: 9px 0;
+}
+
+button.work,
+button.quote-button {
+	height: 50px;
+	margin: 10px 0;
+	padding: 0;
+	font-size: 13px;
+	width: 200px;
+}
+.work {
+	background: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+}
+
+#call-strip h3 {
+    font-size: 17px;
+    color: #fff;
+    text-align: left !important;
+}
+
+/*-- -------------------------- -->
+<---           HOW              -->
+<--- -------------------------- -*/
+
+.how-content {
+    margin-bottom: 40px;
+}
+
+.how-line {
+    height: 2px;
+    width: 90%;    
+    background: var(--main-red);
+    margin-bottom: 15px;
+}
+
+.how-content h3 {
+    font-weight: 700;
+    text-align: left;
+    margin: 15px 0;
+} 
+
+.how-content p {
+    text-align: left;
+}
+
+.how-content img {
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+}
+
+.how-button-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.how-button {
+    width: 250px;
+}
+
+/*-- -------------------------- -->
+<---          CARDS             -->
+<--- -------------------------- -*/
+
+.card {
+	height: auto;
+	text-align: left;
+	border: none !important;
+	margin: 60px 0;
+}
+
+.card img {
+	width: 100%;
+}
+
+.card h3 {
+	text-align: left;
+	margin: 15px 0 9px 0;
+	font-weight: 900;
+	font-size: 23px;
+}
+
+.card p {
+	text-align: left;
+}
+
+button.card-button{
+	width: 200px;
+}
+
+.call-strip-button {
+    display: none;
+}
+}
+
+/*-- -------------------------- -->
+<---         CAROUSEL           -->
+<--- -------------------------- -*/
+
+#carousel {
+	height: 450px;
+	width: 100%;
+    background:url("../images/cabinet-stain.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.carousel {
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    position: relative;
+    background:url("../images/paint-brushes.jpg");
+    background-size: cover;
+}
+
+.carousel-dark {
+    position: absolute;
+    height: 450px;
+    width: 100%;
+    background: #000;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.carousel-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.carousel-header h3 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 23px;
+    text-align: center !important;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 10px;
+}
+
+.carousel-inner {
+	margin: 0;
+    position: absolute;
+    top: 55%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 5;
+    height: 100%;
+}
+
+.carousel-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.carousel-item p {
+	width: 184px;
+	margin: 10px auto;
+	color: #fff;
+    font-size: 13px;
+}
+
+.carousel-item h3 {
+	color: #F9BF0F;
+	font-size: 30px;
+	font-weight: 700;
+    margin-top: 20px;
+    text-align: center;
+}
+
+ol.carousel-indicators {
+	position: relative;
+	bottom: -380px;
+	margin: 0;
+	width: auto;
+    z-index: 10;
+}
+
+.carousel-control-next {
+    position: absolute;
+    margin-left: auto;
+    top: -10%;
+    z-index: 100 !important;
+}
+
+.carousel-control-prev {
+    position: absolute;
+    margin-right: auto;
+    top: -10%;
+    z-index: 100 !important;
+}
+
+#triangle {
+	width: 100%;
+	height: 150px;
+	background: #fff;
+	clip-path: polygon(0 76%, 0% 100%, 120% 100%);
+    -webkit-clip-path: polygon(0 76%, 0% 100%, 120% 100%);
+	position: absolute;
+	bottom: 0px;
+    z-index: 100;
+}
+	
+/*-- -------------------------- -->
+<---         SERVICES           -->
+<--- -------------------------- -*/
+
+.services-topper {
+	padding-top: 60px;
+	padding-bottom: 0;
+}
+
+.services-line {
+	height: 3px;
+	width: 100px;
+	background: var(--main-red);
+	margin: auto;
+	margin: 15px auto;
+}
+
+.services-item i {
+	color: var(--main-red);
+}
+
+.services-topper h2 {
+	font-weight: 900;
+	font-size: 28px;
+	width: auto;
+}
+
+.services-item {
+	margin: 80px 0;
+}
+
+.services-icons h3 {
+	font-weight: 700;
+	font-size: 29px;
+	margin: 10px 0;
+}
+
+.services-item:last-child {
+	margin-bottom: 30px;
+}
+
+.services-button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+/*-- -------------------------- -->
+<---          WHY BOB           -->
+<--- -------------------------- -*/
+
+.why-bob-topper {
+	padding-top: 80px;
+	padding-bottom: 0;
+}
+
+.why-bob-line {
+	height: 3px;
+	width: 100px;
+	background: var(--main-red);
+	margin: auto;
+	margin: 15px auto;
+}
+
+.why-bob-topper h2 {
+	font-weight: 900;
+	font-size: 28px;
+	width: auto;
+    overflow-y: hidden;
+    text-align: center;
+}
+
+.why-bob-topper p {
+	text-align: center;
+}
+
+.about-content img {
+	border-radius: 50%;
+	margin: 30px auto;
+}
+
+.list-item {
+	margin: 60px auto;
+}
+
+.svg {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90px;
+	height: 90px;
+	background: transparent;
+	border: 1px solid #DFE0E1;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.about-content svg {
+	width: 84px;
+	height: 104px;
+}
+
+.list-item h3 {
+	margin: 20px auto 10px auto;
+	font-weight: 700;
+	font-size: 17px;
+}
+
+.list-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bob-button {
+	height: 40px;
+	width: 170px;
+	padding: 0;
+	font-size: 13px;
+}
+
+.about-button-div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/*-- -------------------------- -->
+<---          GALLERY           -->
+<--- -------------------------- -*/
+
+#gallery {
+	height: auto;
+}
+
+.gallery-content {
+	height: 160px;
+	width: 100%;
+    background:url("../images/painting-house.jpg");
+    background-position: center center;
+    position: relative;
+}
+
+.gallery-dark {
+    position: absolute;
+    height: 160px;
+    width: 100%;
+    background: #000;
+    opacity: 0.7;
+    z-index: 5;
+}
+
+.gallery-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 160px;
+}
+
+.gallery-content h3 {
+	font-size: 22px;
+	color: #fff;
+	font-weight: 700;
+	margin: 0;
+    position: relative;
+    z-index: 6;
+}
+
+.gallery-button {
+	padding: 0;
+	height: 40px;
+	width: 200px;
+	margin-bottom: 0;
+    position: relative;
+    z-index: 6;
+}
+
+.gallery {
+	display: flex;
+	flex-direction: column;
+	height: auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+/*-- -------------------------- -->
+<---          CONTACT           -->
+<--- -------------------------- -*/
+
+#contact {
+	height: 230px;
+	width: 100%;
+    background:url("../images/paint-brushes.jpg");
+    background-position: center center;
+    position: relative;
+}
+
+.contact-dark {
+    position: absolute;
+    height: 230px;
+    width: 100%;
+    background: var(--main-red);
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.contact-flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 230px;
+    position: relative;
+    z-index: 3;
+}
+
+.left h3 {
+	color: #fff;
+	font-weight: 900;
+	text-align: center;
+    font-size: 33px;
+}
+
+.left p {
+	color: #fff;
+}
+
+.contact-button {
+	background: #fff;
+	border: none;
+	color: var(--main-red);
+    width: 250px;
+}
+
+.contact-button:hover {
+	background: #E8E6E6;
+}
+
+/*-- -------------------------- -->
+<---           FOOTER           -->
+<--- -------------------------- -*/
+
+.footer-flex {
+	padding-top: 50px;
+}
+
+#footer {
+    background:#fff;
+}
+
+.footer-item p {
+    margin: 0;
+    text-align: left;
+}
+
+.footer-item img {
+    margin: 0px 100% 30px 0;
+    padding-top: 30px;
+    float: left;
+}
+
+.footer-item h4 {
+    font-size: 18px;
+    color: #414141;
+    text-align: left;
+    margin-top: 40px;
+    font-weight: 700;
+}
+
+.footer-line {
+    width: 260px;
+    border-top: 2px solid var(--main-red);
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.button-list a {
+    text-decoration: none;
+    margin-bottom: 15px;
+    list-style: none;
+    text-align: left;
+    display: block;
+}
+
+.button-list a:hover {
+    color: #E8E6E6;
+}
+
+.green {
+    color: var(--main-red);
+}
+
+.footer-main-line {
+    width: 100%;
+    margin: 20px 0;
+    border-top: 2px solid var(--main-red);
+}
+
+.branding a {
+    text-decoration: none;
+}
+
+.branding a:hover {
+    color: var(--main-red);
+    opacity: .7;
+}
+
+.branding {
+    height: 150px;
+    text-align: center;
+}
+
+.branding p {
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+/* Tablets */
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+
+    /*-- -------------------------- -->
+    <---           HERO             -->
+    <--- -------------------------- -*/
+
+    #hero {
+        background-repeat: no-repeat !important;
+    }
+
+    .heroText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        height: 450px;
+        width: 500px;
+    }
+
+    .flex-button {
+        display: flex;
+        flex-direction: row;
+    }
+
+    button.quote {
+        margin-right: 20px;
+    }
+
+    /*-- -------------------------- -->
+    <---        CALL STRIP          -->
+    <--- -------------------------- -*/
+
+    #call-strip {
+        display: block;
+        height: 200px;
+        width: 100%;
+        background:url("../images/gutter-finish-compressor.jpg");
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .call-strip-dark {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: var(--main-red);
+        opacity: 0.8;
+        z-index: 2;
+    }
+
+    .call-strip-content {
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        position: relative;
+        z-index: 5;
+    }
+
+    .call-strip-content h3 {
+        width: 400px;
+        height: auto;
+        margin: 0;
+        color: #fff;
+    }
+
+    .call-strip-button {
+        height: 40px;
+        padding: 0;
+        width: 220px;
+        font-size: 13px;
+        display: block;
+    }
+
+    /*-- -------------------------- -->
+    <---          BIG 3             -->
+    <--- -------------------------- -*/
+
+    #three-card {
+        height: auto;
+    }
+
+    .card-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        z-index: 5;
+        height: auto;
+    }
+
+    .card-flex:first-child {
+        width: auto !important;
+    }
+
+    .card {
+        width: 30%;
+        position: relative;
+        top: -150px;
+    }
+
+    .card img {
+        border: 2px solid #fff;
+        box-sizing: border-box;
+    }
+
+    .card h3 {
+        font-size: 17px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+
+    .card-button {
+        position: absolute;
+        bottom: -80px;
+        padding: 0;
+        height: 40px;
+    }
+
+
+    /*-- -------------------------- -->
+    <---           HOW              -->
+    <--- -------------------------- -*/
+
+    .how-content img {
+        width: 400px;
+        height: auto;
+        float: left;
+        margin-right: 100%;
+        margin-left: 0;
+    }
+
+    /*-- -------------------------- -->
+    <---         CAROUSEL           -->
+    <--- -------------------------- -*/
+
+    .carousel-inner {
+        position: relative;
+        top: 170px;
+        height: auto;
+    }
+
+    .carousel-indicators {
+        position: relative;
+        top: 380px;
+    }
+
+    .carousel-header h3 {
+        font-size: 30px;
+    }
+
+    .carousel-item p {
+        height: auto;
+        width: 240px;
+        margin-top: 20px;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        position: relative;
+        top: -20px;
+    }
+
+    #triangle {
+        bottom: 0px;
+        clip-path: polygon(50% 100%, 100% 60%, 100% 100%, 
+            100% 100%, 100% 100%, 23% 100%, 0 100%, 0 100%, 
+            0 100%, 0 60%);;
+    }
+
+    /*-- -------------------------- -->
+    <---          ABOUT             -->
+    <--- -------------------------- -*/
+
+    .list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .image {
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    }
+
+    .list-item {
+        width: 29%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .list-item p {
+        font-size: 15px;
+    }
+
+    .list-item svg {
+        height: 78px;
+        width: 74px;
+    }
+
+
+    .about-button-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    /*-- -------------------------- -->
+    <---         GALLERY            -->
+    <--- -------------------------- -*/
+
+    #gallery {
+        height: auto;
+    }
+
+    .gallery-under {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        height: auto;
+    }
+
+    .gallery img {
+        width: 50%;
+        height: auto;
+        margin: 0;
+    }
+
+    /*-- -------------------------- -->
+    <---          FOOTER            -->
+    <--- -------------------------- -*/
+    
+    .footer-item {
+        width: 300px;
+    }
+}
+
+
+@media screen and (min-width: 1025px) {
+
+	/*-- -------------------------- -->
+	<---         NAVIGATION         -->
+	<--- -------------------------- -*/
+
+	/* Page Wide */
+	.container {
+		max-width: 980px;
+		padding: 0 2em;
+		margin: auto;
+	}
+
+	.topper-flex,
+	#brand,
+	.navbar-menu,
+	.mobile-nav {
+		display: block;
+	}
+
+	.mobile-nav {
+		display: none;
+	}
+
+	.open-slide,
+	#side-menu {
+		display: none;
+	}
+
+	/* Topper */
+	.topper-wrapper {
+		background: #0e1111;
+		width: 100%;
+		height: 50px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.topper-flex {
+		background: #0e1111;
+		width: 100%;
+		margin: auto;
+		display: flex;
+		align-items: center;
+	}
+
+	.topper-content {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+	}
+
+	.topper-content i {
+		margin-right: 10px;
+		color: #fff;
+		margin: auto 16px;
+	}
+
+	.topper-content p {
+		margin-right: 25px;
+		margin-bottom: 0;
+		color: #fff;
+	}
+
+	/* Branding Bar */
+	.brand-bar {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		height: 130px;
+		width: auto;
+	}
+
+	.quote {
+		margin-right: 50px;
+	}
+
+	.branding-bar {
+		width: 500px !important;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding:  0;
+		margin: 0 !important;
+	}
+
+	.quote i {
+		color: var(--main-red);
+		font-size: 45px;
+		display: flex;
+		align-items: center;
+		margin-right: 25px;
+	}
+
+	.call i {
+		color: var(--main-red);
+		font-size: 45px;
+		display: flex;
+		align-items: center;
+		margin-right: 25px;
+	}
+
+	.quote {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: auto;
+	}
+
+	.quote-block p {
+		margin: 0;
+	}
+
+	.call {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: auto;
+	}
+
+	.call-block p {
+		margin: 0;
+	}
+
+	/* Desktop Navbar */
+	#navbar {
+		height: 237px;
+	}
+
+	.navbar-menu {
+		width: auto;
+		height: 60px;
+		border-top: 1px solid rgba(118, 118, 118, .5);
+	}
+
+	ul.navbar-links {
+		display: flex;
+		align-items: center;
+		float: left !important;
+		padding: 0;
+		height: 60px;
+        margin-bottom: 0;
+
+	}
+
+	.navbar-menu {
+		width: 100%;
+		height: auto;
+		display: block;
+		position: relative;
+		z-index: 100;
+	}
+
+	.navbar-links li a {
+		width: auto;
+		text-align: left;
+		padding: 18px 20px;
+		margin-right: 10px;
+        color:  #414141;
+	}
+
+	.navbar-links li a:hover {
+		color: var(--main-red);
+		opacity: .5;
+	}
+
+	.active-menu {
+		color: var(--main-red) !important;
+		border-top: 4px solid var(--main-red);
+	}
+
+	.navbar-links li {
+		width: auto;
+		text-align: left;
+		float: left;
+		margin: 10px 10px 10px 0;
+	}
+
+	/*-- -------------------------- -->
+    <---           HERO             -->
+    <--- -------------------------- -*/
+
+    #hero {
+        height: 600px;
+        background:url("../images/cabinet-stain.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #home-h {
+        font-size: 48px;
+        width: 800px;
+    }
+
+    #home-p {
+        width: 600px;
+        margin: 15px 0;
+    }
+
+    button.hero-quote {
+        margin-right: 25px;
+    }
+
+    .hero-content {
+        padding-top: 40px;
+    }
+
+    /*-- -------------------------- -->
+    <---         CALL STRIP         -->
+    <--- -------------------------- -*/
+
+    #call-strip {
+        display: block;
+        height: 200px;
+        width: 100%;
+        background:url("../images/paint-brushes.jpg");
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .call-strip-dark {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: var(--main-red);
+        opacity: 0.8;
+        z-index: 2;
+    }
+
+    .call-strip-content {
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        position: relative;
+        z-index: 5;
+    }
+
+    .call-strip-content h3 {
+        width: auto;
+        height: auto;
+        margin: 0;
+        color: #fff;
+        font-size: 20px !important;
+    }
+
+    .call-strip-button {
+        height: 40px;
+        padding: 0;
+        width: 240px;
+        font-size: 13px;
+        display: block;
+    }
+
+    /*-- -------------------------- -->
+    <---           BIG 3            -->
+    <--- -------------------------- -*/
+
+    #three-card {
+        height: auto;
+    }
+
+    .card-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+    }
+
+    .card {
+        width: 27%;
+        position: relative;
+        top: -140px;
+        z-index: 6;
+    }
+
+    .card img {
+        box-sizing: border-box;
+        border: 2px solid #fff;
+    }
+
+    .card h3 {
+        font-size: 18px;
+        overflow-y: hidden;
+        margin: 20px 0;
+    }
+
+    .card p {
+        margin-bottom: 25px;
+    }
+
+    .card-button {
+        margin-top: auto;
+    }
+
+    /*-- -------------------------- -->
+    <---           HOW              -->
+    <--- -------------------------- -*/
+    
+    .how-content img {
+        width: 400px;
+        height: auto;
+
+    }
+
+    /*-- -------------------------- -->
+    <---         CAROUSEL           -->
+    <--- -------------------------- -*/
+    
+    #carousel {
+        position: relative;
+        height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .carousel {
+        position: relative;
+        height: 500px;
+    }
+
+    .carousel-header h3 {
+    	font-size: 40px;
+    }
+
+    .carousel-item p {
+    	font-size: 16px;
+    	width: 300px;
+    }
+
+    .carousel-inner {
+        height: 100%;
+        position: relative;
+        top: 150px;
+    }
+
+    .carousel-dark {
+        position: absolute;
+        height: 100%;
+    }
+
+    ol.carousel-indicators {
+        margin-top: 60px;
+        position: relative;
+        top: 360px;
+    }
+
+    .carousel-inner {
+        margin-top: 30px;
+    }
+
+    #triangle {
+        position: absolute;
+        bottom: 0px;
+        clip-path: polygon(50% 100%, 100% 60%, 100% 100%, 
+            100% 100%, 100% 100%, 23% 100%, 0 100%, 0 100%, 
+            0 100%, 0 60%);;
+    }
+
+    /*-- -------------------------- -->
+    <---           ABOUT            -->
+    <--- -------------------------- -*/
+
+    .why-bob-topper {
+        width: 720px;
+        margin: auto;
+    }
+
+    .why-bob-topper h2 {
+        font-size: 40px;
+    }
+
+    .image {
+        width: 413px;
+    }
+
+    .image h3 {
+        font-weight: 700;
+    }
+
+    .image img {
+        width: 413px;
+        height: 413px;
+    }
+
+    .list {
+        width: 510px;
+    }
+
+    .list-item {
+        width: 450px;
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        margin: 18px auto;
+        justify-content: space-between;
+    }
+
+    .list-item p {
+        font-size: 14px; 
+        width: 320px;
+        text-align: left;
+    }
+
+    .svg {
+        margin: 20px;
+    }
+
+    .list-item h3 {
+        text-align: left;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: auto;
+    }
+
+    .about-button-div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 50px;
+    }
+
+    /*-- -------------------------- -->
+    <---          GALLERY           -->
+    <--- -------------------------- -*/
+
+    #gallery {
+        height: auto;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    #gallery img {
+        height: auto;
+        width: 20%;
+    }
+
+    .gallery-content {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /*-- -------------------------- -->
+    <---           CONTACT          -->
+    <--- -------------------------- -*/
+
+    .contact-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        text-align: left;
+    }
+
+    .left p,
+    .left h3 {
+        text-align: left;
+        margin: 0;
+    }
+
+    #contact {
+        height: 170px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .contact-dark {
+        height: 100%;
+
+    }
+
+    /*-- -------------------------- -->
+    <---           FOOTER           -->
+    <--- -------------------------- -*/
+
+    .footer-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 50px;
+    }
+
+    .footer-item img {
+        margin: 0 80px 40px 0;
+        padding: 0;
+        width: 150px;
+    }
+
+    .footer-item {
+        width: 20%;
+    }
+
+    .footer-item h4 {
+        font-weight: 900;
+    }
+
+    .footer-item p {
+        font-size: 15px;
+    }
+
+    .footer-line {
+        width: 85%;
+    }
+
+    .branding {
+        height: 70px;
+    }
+
+    .branding p {
+        margin-bottom: 2px;
+    }
+
+}
