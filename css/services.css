@@ -314,7 +314,8 @@ ul#on-top {
 
 .footer-item p {
     margin: 0;
-    text-align: left;
+	text-align: left;
+	max-width: 300px;
 }
 
 .footer-item img {

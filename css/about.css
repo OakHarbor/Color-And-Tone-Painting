@@ -911,7 +911,7 @@ p.text {
         background-clip: padding-box /*the rest*/;
         position: absolute;
         top: -220px;
-        right: -100px;
+        right: 0px;
     }
 
     .about-card img {
