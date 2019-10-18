@@ -542,9 +542,10 @@ ul#on-top {
     }
 
     .footer-item img {
-        margin: 0 80px 40px 0;
+        margin-top: 40px;
         padding: 0;
-        width: 150px;
+        width: 230px;
+        height: auto;
     }
 
     .footer-item {
@@ -569,5 +570,9 @@ ul#on-top {
 
     .branding p {
         margin-bottom: 2px;
-    }
+	}
+	
+	.footer1 p {
+		display: none;
+	}
 }
