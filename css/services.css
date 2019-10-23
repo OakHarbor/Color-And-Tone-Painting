@@ -225,11 +225,12 @@ ul#on-top {
 <--- -------------------------- -*/
 
 #contact-header {
-    height: 250px;
+    height: 450px;
     width: 100%;
     background:url("../images/painting-house.jpg");
 	background-position: center center;
 	background-size: cover;
+	background-attachment: fixed;
     color: #fff;
     display: flex;
     align-items: center;
@@ -596,7 +597,7 @@ ul#on-top {
     .card {
 		margin: 20px;
 		width: 350px;
-		height: 500px;
+		height: 510px;
 	}
 
 	.card img {
