@@ -60,6 +60,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .button-solid:hover {
     color: var(--main-red);
     background: #fff;
+    border: 1px solid var(--main-red);
 }
 
 .button-transparent {
@@ -84,6 +85,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .button-transparent:hover {
     color: #fff;
     background: var(--main-red);
+    border: none;
 }
 
 /*-- -------------------------- -->
@@ -102,11 +104,12 @@ p, h1, h2, h3, h4, h5, h6 {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	padding: 0;
 	height: 100px;
 	background: #fff;
-	position: relative;
+    position: relative;
+    margin: auto;
 }
 
 /* Hamburger Menu */
@@ -346,6 +349,14 @@ ul#on-top {
 .branding p {
     font-size: 13px;
     margin-bottom: 2px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+	.mobile-nav {
+		justify-content: center;
+	}
+
 }
 
 @media screen and (min-width: 1025px) {

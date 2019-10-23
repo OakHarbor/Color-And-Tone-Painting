@@ -60,6 +60,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .button-solid:hover {
     color: var(--main-red);
     background: #fff;
+    border: 1px solid var(--main-red);
 }
 
 .button-transparent {
@@ -84,6 +85,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .button-transparent:hover {
     color: #fff;
     background: var(--main-red);
+    border: none;
 }
 
 /*-- -------------------------- -->
@@ -223,7 +225,7 @@ ul#on-top {
 <--- -------------------------- -*/
 
 #hero {
-    height: auto;
+    height: 550px;
     width: 100%;
     background:url("../images/cabinet-stain.jpg");
     /*background-attachment: fixed;*/
@@ -275,6 +277,11 @@ button.quote-button {
 	font-size: 13px;
 	width: 200px;
 }
+
+.hero-quote:hover {
+    border: none;
+}
+
 .work {
 	background: transparent;
 	border: 2px solid #fff;
@@ -282,9 +289,7 @@ button.quote-button {
 }
 
 #call-strip h3 {
-    font-size: 17px;
-    color: #fff;
-    text-align: left !important;
+    display: none;
 }
 
 /*-- -------------------------- -->
@@ -364,6 +369,14 @@ button.card-button{
 .call-strip-button {
     display: none;
 }
+
+/*-- -------------------------- -->
+<---           FAQ              -->
+<--- -------------------------- -*/
+
+.how-content h2 {
+    text-align: left;
+    font-weight: bold;
 }
 
 /*-- -------------------------- -->
@@ -474,7 +487,7 @@ ol.carousel-indicators {
 	clip-path: polygon(0 76%, 0% 100%, 120% 100%);
     -webkit-clip-path: polygon(0 76%, 0% 100%, 120% 100%);
 	position: absolute;
-	bottom: 0px;
+	bottom: -1px;
     z-index: 100;
 }
 	
@@ -822,6 +835,7 @@ ol.carousel-indicators {
 
     #hero {
         background-repeat: no-repeat !important;
+        height: auto;
     }
 
     .heroText {
@@ -877,10 +891,13 @@ ol.carousel-indicators {
     }
 
     .call-strip-content h3 {
+        display: block !important;
         width: 400px;
         height: auto;
         margin: 0;
         color: #fff;
+        font-size: 20px !important;
+        text-align: left;
     }
 
     .call-strip-button {
@@ -889,6 +906,11 @@ ol.carousel-indicators {
         width: 220px;
         font-size: 13px;
         display: block;
+    }
+
+    .call-strip-button:hover {
+        background: #fff;
+        color: var(--main-red);
     }
 
     /*-- -------------------------- -->
@@ -1275,8 +1297,8 @@ ol.carousel-indicators {
         margin: 15px 0;
     }
 
-    button.hero-quote {
-        margin-right: 25px;
+    .hero-quote {
+        margin-left: 34px !important;
     }
 
     .hero-content {
@@ -1318,6 +1340,7 @@ ol.carousel-indicators {
     }
 
     .call-strip-content h3 {
+        display: block !important;
         width: auto;
         height: auto;
         margin: 0;
