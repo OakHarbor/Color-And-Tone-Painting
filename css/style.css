@@ -1854,6 +1854,7 @@ ol.carousel-indicators {
 
     #gallery img {
         height: auto;
+        max-height: 300px;
         width: 20%;
     }
 
