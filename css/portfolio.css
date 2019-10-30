@@ -637,7 +637,8 @@ ul#on-top {
 
 	.navbar-links li a:hover {
 		color: var(--main-red);
-		opacity: .5;
+		opacity: .7;
+        text-decoration: none;
 	}
 
 	.active-menu {
