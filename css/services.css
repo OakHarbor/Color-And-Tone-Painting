@@ -256,9 +256,9 @@ ul#on-top {
 <--- -------------------------- -*/
 
 #contact-header {
-    height: 450px;
+    height: 250px;
     width: 100%;
-    background:url("../images/3.jpg");
+    background:url("../images/kitchen.jpg");
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -491,6 +491,11 @@ ul#on-top {
 }
 
 @media screen and (min-width: 500px) and (max-width: 1024px) {
+
+	#contact-header {
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 
 	.services-flex {
 		display: -webkit-box;
@@ -806,6 +811,10 @@ ul#on-top {
     /*-- -------------------------- -->
     <---          SERVICES          -->
 	<--- -------------------------- -*/
+
+	#contact-header {
+		height: 450px;
+	}
 	
 	.contact-header {
 		font-size: 70px !important;
