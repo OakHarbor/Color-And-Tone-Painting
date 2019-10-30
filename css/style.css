@@ -640,8 +640,8 @@ ol.carousel-indicators {
 }
 
 .about-content img {
-	border-radius: 50%;
-	margin: 30px auto;
+    margin: 30px auto;
+    width: 100%;
 }
 
 .list-item {
@@ -1204,6 +1204,9 @@ ol.carousel-indicators {
         width: 74px;
     }
 
+    .about-content img {
+        width: 300px;
+    }
 
     .about-button-div {
         width: 100%;
