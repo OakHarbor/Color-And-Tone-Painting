@@ -297,7 +297,8 @@ ul#on-top {
 <--- -------------------------- -*/
 
 .about-flex-img {
-    display: none;
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 .about-topper-content h2 {
@@ -621,8 +622,7 @@ p.text {
     }
 
     .about-flex-img {
-        display: block;
-        border-radius: 50%;
+        width: 250px;
     }
 
     /*-- -------------------------- -->
@@ -1049,6 +1049,10 @@ p.text {
         width: 980px;
         height: 400px;
         position: relative;
+    }
+
+    .about-flex-img {
+        display: none;
     }
 
     .about-flex-content p {
