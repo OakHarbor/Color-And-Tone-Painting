@@ -336,7 +336,8 @@ button.quote-button {
 .how-content {
     margin: auto;
     margin-bottom: 40px;
-    max-width: 721px;
+    max-width: 330px;
+    padding: 0 1em;
 }
 
 .how-line {
@@ -389,7 +390,8 @@ button.quote-button {
 	height: auto;
 	text-align: left;
 	border: none !important;
-	margin: 60px 0;
+    margin: 60px 0;
+    width: 100%;
 }
 
 .card img {
@@ -1128,6 +1130,10 @@ ol.carousel-indicators {
         float: left;
         margin-right: 100%;
         margin-left: 0;
+    }
+
+    .how-content {
+        max-width: 720px;
     }
 
     /*-- -------------------------- -->
