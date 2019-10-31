@@ -265,10 +265,7 @@ ul#on-top li a:hover {
     height: 250px;
     width: 100%;
     background:url("../images/modern.jpg");
-	background-attachment: fixed;
-    background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
     color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
