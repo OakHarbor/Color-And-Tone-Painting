@@ -1,7 +1,7 @@
 /* Global styles */
 
 :root {
-    --main-red: #ff0000;
+    --main-red: #A51D40;
 }
 
 body, html {
@@ -26,7 +26,7 @@ body, html {
 
 .mobile-wrapper {
 	background: #fff;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid var(--main-red);
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -44,7 +44,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* Buttons */
 .button-solid {
-	background: red;
+	background: var(--main-red);
 	border-radius: 25px;
 	border: none;
 	color: #fff;
@@ -294,7 +294,7 @@ ul#on-top {
 .outter {
     width: 85px;
     height: 85px; 
-    border: 1px solid #DB170D;
+    border: 1px solid var(--main-red);
     background: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -332,7 +332,7 @@ ul#on-top {
 .inner {
     width: 65px;
     height: 65px;
-    background: #DB170D;
+    background: var(--main-red);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -440,7 +440,7 @@ ul#on-top {
 .block {
     width: 100%;
     height: 50px;
-    background: #DB170D;
+    background: var(--main-red);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -481,7 +481,7 @@ ul#on-top {
 }
 
 .hours-text h3 {
-    color: #bd170d;
+    color: var(--main-red);
     font-size: 20px;
     text-align: left;
     font-weight: 700;
@@ -490,7 +490,7 @@ ul#on-top {
 
 .contact-line {
     width: 100%;
-    background: #bd170d;
+    background: var(--main-red);
     height: 2px;
     margin: 10px 0;
 }
@@ -607,7 +607,7 @@ form p{
     cursor:pointer;
     width:100%;
     border:none;
-    background:#db170d;
+    background:var(--main-red);
     color:#FFF;
     margin:0 0 5px;
     padding:10px;
@@ -673,7 +673,7 @@ form p{
 
 .footer-line {
     width: 260px;
-    border-top: 2px solid #DB170D;
+    border-top: 2px solid var(--main-red);
     margin-top: 10px;
     margin-bottom: 30px;
 }
@@ -691,13 +691,13 @@ form p{
 }
 
 .green {
-    color: #DB170D;
+    color: var(--main-red);
 }
 
 .footer-main-line {
     width: 100%;
     margin: 20px 0;
-    border-top: 2px solid #DB170D;
+    border-top: 2px solid var(--main-red);
 }
 
 .branding a {
@@ -705,7 +705,7 @@ form p{
 }
 
 .branding a:hover {
-    color: #DB170D;
+    color: var(--main-red);
     opacity: .7;
 }
 

@@ -1,7 +1,7 @@
 /* Global styles */
 
 :root {
-    --main-red: #ff0000;
+    --main-red: #A51D40;
 }
 
 body, html {
@@ -26,7 +26,7 @@ body, html {
 
 .mobile-wrapper {
 	background: #fff;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid var(--main-red);
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -44,7 +44,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* Buttons */
 .button-solid {
-	background: red;
+	background: var(--main-red);
 	border-radius: 25px;
 	border: none;
 	color: #fff;

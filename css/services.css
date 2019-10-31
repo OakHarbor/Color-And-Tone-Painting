@@ -1,7 +1,7 @@
 /* Global styles */
 
 :root {
-    --main-red: #ff0000;
+    --main-red: #A51D40;
 }
 
 body, html {
@@ -26,7 +26,7 @@ body, html {
 
 .mobile-wrapper {
 	background: #fff;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid var(--main-red);
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -344,7 +344,7 @@ ul#on-top {
 .services-line {
     height: 1px;
     width: 80%;
-    background: #DB170D;
+    background: var(--main-red);
     margin: 10px auto 10px 0;
 }
 
@@ -444,7 +444,7 @@ ul#on-top {
 
 .footer-line {
     width: 260px;
-    border-top: 2px solid #DB170D;
+    border-top: 2px solid var(--main-red);
     margin-top: 10px;
     margin-bottom: 30px;
 }
@@ -462,13 +462,13 @@ ul#on-top {
 }
 
 .green {
-    color: #DB170D;
+    color: var(--main-red);
 }
 
 .footer-main-line {
     width: 100%;
     margin: 20px 0;
-    border-top: 2px solid #DB170D;
+    border-top: 2px solid var(--main-red);
 }
 
 .branding a {
@@ -476,7 +476,7 @@ ul#on-top {
 }
 
 .branding a:hover {
-    color: #DB170D;
+    color: var(--main-red);
     opacity: .7;
 }
 

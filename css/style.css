@@ -1,7 +1,7 @@
 /* Global styles */
 
 :root {
-    --main-red: #ff0000;
+    --main-red: #A51D40;
 }
 
 body, html {
@@ -26,7 +26,7 @@ body, html {
 
 .mobile-wrapper {
 	background: #fff;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid #A51D40;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -44,7 +44,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* Buttons */
 .button-solid {
-	background: red;
+	background: #A51D40;
 	border-radius: 25px;
 	border: none;
 	color: #fff;
@@ -992,7 +992,7 @@ ol.carousel-indicators {
         display: block;
         height: 200px;
         width: 100%;
-        background:url("../images/gutter-finish-compressor.jpg");
+        background:url("../images/drywall-compressor.jpg");
         position: relative;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1003,7 +1003,7 @@ ol.carousel-indicators {
         height: 100%;
         width: 100%;
         background: var(--main-red);
-        opacity: 0.8;
+        opacity: 0.9;
         z-index: 2;
     }
 
