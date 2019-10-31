@@ -478,6 +478,7 @@ button.card-button{
 
 .carousel-header h3 {
     color: #fff;
+    background: transparent;
     font-weight: 900;
     font-size: 23px;
     text-align: center !important;
