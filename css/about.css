@@ -282,11 +282,11 @@ ul#on-top li a:hover {
 }
 
 .about-dark {
-    background: #000;
+    background: var(--main-red);
     position: absolute;
     height: 100%;
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.58
 }
 
 #about-header h1 {

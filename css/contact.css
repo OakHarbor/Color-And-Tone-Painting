@@ -277,7 +277,7 @@ ul#on-top li a:hover {
 }
 
 .contact-dark {
-    background: #000;
+    background: var(--main-red);
     position: absolute;
     height: 100%;
     width: 100%;

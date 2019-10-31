@@ -264,9 +264,11 @@ ul#on-top li a:hover {
 #contact-header {
     height: 250px;
     width: 100%;
-    background:url("../images/painting-house.jpg");
-	background-position: center center;
-	background-size: cover;
+    background:url("../images/modern.jpg");
+	background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -281,7 +283,7 @@ ul#on-top li a:hover {
 }
 
 .contact-dark {
-    background: #000;
+    background: var(--main-red);
     position: absolute;
     height: 100%;
     width: 100%;
