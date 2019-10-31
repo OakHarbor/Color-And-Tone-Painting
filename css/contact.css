@@ -238,6 +238,12 @@ ul#on-top {
     margin-bottom: 0;
 }
 
+ul#on-top li a:hover {
+    text-decoration: none;
+    color: var(--main-red);
+    opacity: .4;
+}
+
 .menu-center {
 	position: absolute;
 	top: 9px;
