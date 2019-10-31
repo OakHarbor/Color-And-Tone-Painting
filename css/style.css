@@ -1646,6 +1646,8 @@ ol.carousel-indicators {
 
     #three-card {
         height: auto;
+        position: relative;
+        z-index: 1000;
     }
 
     .card-flex {
@@ -1696,7 +1698,10 @@ ol.carousel-indicators {
     .how-content img {
         width: 400px;
         height: auto;
+    }
 
+    .how-content {
+        max-width: 720px;
     }
 
     /*-- -------------------------- -->
