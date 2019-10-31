@@ -268,7 +268,6 @@ ul#on-top li a:hover {
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
     color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -820,6 +819,10 @@ ul#on-top li a:hover {
 
 	#contact-header {
 		height: 450px;
+		background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 	}
 	
 	.contact-header {
