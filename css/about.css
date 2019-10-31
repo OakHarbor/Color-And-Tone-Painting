@@ -293,6 +293,7 @@ ul#on-top li a:hover {
     font-size: 40px;
     text-align: center;
     color: #fff;
+    background-color: transparent;
     position: relative;
     z-index: 5;
     font-weight: 900;
@@ -1011,6 +1012,10 @@ p.text {
                 flex-direction: column;
     }
 
+    .about-item h3 {
+        font-size: 23px;
+    }
+
     .large-container {
         margin: auto 30px;
     }
@@ -1097,8 +1102,9 @@ p.text {
     }
 
     #call-anytime {
-        font-size: 23px;
+        font-size: 23px !important;
         font-family: raleway,sans-serif;
+        text-align: left;
     }
 
     .card-content h4 {

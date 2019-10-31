@@ -334,7 +334,9 @@ button.quote-button {
 <--- -------------------------- -*/
 
 .how-content {
+    margin: auto;
     margin-bottom: 40px;
+    max-width: 721px;
 }
 
 .how-line {
