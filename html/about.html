@@ -26,44 +26,26 @@
 </head>
 
 <body>
-	<nav>
+	<header>
 		<section id="navbar">
 			<!-- Navigation Topper -->
 			<div class="topper-wrapper">
 				<div class="container topper-flex">
 					<div class="topper-content">
-						<i class="fas fa-phone"></i>
+						<i aria-hidden="true" class="fas fa-phone"></i>
 						<p class="topper-content">(206) 913-9212</p>
-						<i class="fas fa-envelope"></i>
+						<i aria-hidden="true" class="fas fa-envelope"></i>
 						<p class="topper-content">colorandtonepainting@gmail.com</p>
-						<i class="fas fa-map-marker-alt"></i>
+						<i aria-hidden="true" class="fas fa-map-marker-alt"></i>
 						<p class="topper-content">645 SW 142nd St Burien WA, 98166</p>
 					</div>
-				</div>
-			</div>
-
-			<!-- Mobile Navigation Header -->
-			<div class="mobile-wrapper">
-				<div class="mobile-nav container">
-					<img id="mobile-logo-1" src="../images/mobile-logo.png" alt="mobile_company_logo" height="60"> 
-
-					<!-- Hamburger Menu -->
-					<div class="open-slide container">
-						<div id="wrapper" onclick="toggleNav()">
-							<div class="main-item menu ">
-								<span class="line line01"></span>
-								<span class="line line02"></span>
-								<span class="line line03"></span>
-							</div>
-						</div>
-			        </div>
 				</div>
 			</div>
 
 			<!-- Middle navigation -->
 			<div id="brand">
 		    	<div class="brand-bar container">
-		        	<img src="../images/mobile-logo.png" alt="company_logo" height="80">
+		        	<img src="../images/mobile-logo.png" alt="company_logo" height="80" width="293">
 			    	<div class="branding-bar container">
 						<div class="quote">
 							<i class="fas fa-envelope-open-text"></i>
@@ -82,33 +64,36 @@
 			    	</div>
 		    	</div>
 			</div>
+		</section>
 
-			<!-- Desktop Navbar -->
+		<!-- Desktop Navbar -->
+		<div class="mobile-wrapper">
+			<div class="mobile-nav container">
+				<img id="mobile-logo-1" src="../images/mobile-logo.png" alt="mobile_company_logo" height="60"> 
+
+				<!-- Hamburger Menu -->
+				<button aria-label="open the menu" id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
+					<span aria-hidden="true" class="hamburger-box">
+						<span aria-hidden="true" class="hamburger-inner"></span>
+					</span>
+				</button>
+			</div>
+		</div>
+
+		<nav>
 			<div class="navbar-menu">
-				<div class="container">
-					<ul class="navbar-links">
+				<div id="side-menu" class="container side-nav">
+					<ul id="on-top" class="navbar-links">
 						<li><a href="../index.html">HOME</a></li>
-						<li><a class="active-menu" href="about.html">ABOUT</a></li>
-						<li><a href="portfolio.html">PORTFOLIO</a></li>
-						<li><a href="services.html">SERVICES</a></li>
-						<li><a href="contact.html">CONTACT US</a></li>
+						<li><a class="active-menu" href="../html/about.html">ABOUT</a></li>
+						<li><a href="../html/portfolio.html">PORTFOLIO</a></li>
+						<li><a href="../html/services.html">SERVICES</a></li>
+						<li><a href="../html/contact.html">CONTACT US</a></li>
 					</ul>
 				</div>
 			</div>
-		</section>
-
-	</nav>
-
-	<!-- Side menu -->
-	<div id="side-menu" class="side-nav">
-	    <ul id="on-top">
-	        <li class="nav-item"><a href="../index.html">HOME</a></li>
-	        <li class="nav-item"><a class="side-active" href="about.html">ABOUT</a></li>
-	        <li class="nav-item"><a href="portfolio.html">PORTFOLIO</a></li>
-	        <li class="nav-item"><a href="services.html">SERVICES</a></li>
-	        <li class="nav-item"><a href="contact.html">CONTACT US</a></li>
-	    </ul>
-	</div>
+		</nav>
+	</header>
 
 <main>
 
