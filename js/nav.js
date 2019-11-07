@@ -1,8 +1,10 @@
 /* jQuery for the navigation animation */
 
-$("#wrapper").click( function() {
-	$(".menu").toggleClass("close");
-});
+var $hamburger = $(".hamburger");
+  $hamburger.on("click", function(e) {
+    $hamburger.toggleClass("is-active");
+    // Do something else, like open/close menu
+  });
 
 /* Code for the toggling of the navbar */
 
