@@ -216,6 +216,19 @@ p, h1, h2, h3, h4, h5, h6 {
 	transition: 0.3s 
 }
 
+.mobile-nav {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.mobile-nav button {
+    right: 17px;
+    position: absolute;
+}
+
 .active-menu {
 	color: var(--main-red);
     background: #fff;
