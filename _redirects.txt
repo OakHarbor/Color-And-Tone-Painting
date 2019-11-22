@@ -5,3 +5,5 @@ https://colorandtonepaintingseattle.netlify.com/* https://colorandtonepaintingse
 https://colorandtonepaintingseattle.com https://colorandtonepaintingseattle.com/
 
 colorandtonepaintingseattle.com https://colorandtonepaintingseattle.com/ 301!
+
+https://tender-borg-3c2f0e.netlify.com/* https://colorandtonepaintingseattle.com/:splat 301!
