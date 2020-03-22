@@ -1587,7 +1587,7 @@ ol.carousel-indicators {
 
     #hero {
         height: 600px;
-        background:url("../images/cabinet-stain.jpg");
+        background:url("/images/desktop-landing.jpg");
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
