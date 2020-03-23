@@ -744,9 +744,11 @@ button.card-button{
 .gallery-content {
 	height: 160px;
 	width: 100%;
-    background:url("../images/painting-house.jpg");
+    background:url("../images/painting-house-crop-mini.jpg");
     background-position: center center;
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gallery-dark {
@@ -816,9 +818,11 @@ button.card-button{
 #contact {
 	height: 230px;
 	width: 100%;
-    background:url("../images/paint-brushes.jpg");
+    background:url("../images/paint-brushes-mini.jpg");
     background-position: center center;
     position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .contact-dark {
@@ -1880,6 +1884,11 @@ button.card-button{
 
     #gallery {
         height: auto;
+        background: url("/images/painting-house.jpg");
+    }
+
+    .gallery-content {
+        background: url("/images/painting-house.jpg");
     }
 
     .gallery {
@@ -1952,6 +1961,7 @@ button.card-button{
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
+        background: url("/images/paint-brushes.jpg");
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
